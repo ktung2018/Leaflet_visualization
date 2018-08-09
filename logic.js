@@ -23,15 +23,14 @@ var outdoormap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.p
   accessToken: apiKey
 });
 
-// We then create the map object with options. Adding the tile layers we just
-// created to an array of layers.
+// We then create the map by adding tile layers to an array of layers.
 var map = L.map("mapid", {
-  center: [40.7, -94.5],
+  center: [37.09, -95.71],
   zoom: 3,
   layers: [darkmap, satellitemap, outdoormap]
 });
 
-// Adding our 'graymap' tile layer to the map.
+// Adding our 'darkmap' tile layer to the map.
 darkmap.addTo(map);
 
 
