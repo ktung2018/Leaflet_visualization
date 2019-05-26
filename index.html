@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Earth Quakes</title>
+  <title>Geo JSON</title>
 
   <!-- Leaflet CSS & JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
@@ -11,29 +11,14 @@
   <!--D3 cdn-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
-  <!-- Bootstrap stylesheet -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <!-- The map -->  
-
-  <div class="jumbotron">
-      <div class="container">
-          <h2>United States Geological Survey Earthquake Visualization Data with Leaflet</h2>
-          <ul>
-              <p> The map shows all Earthquake data from the past 7 days</p>
-          </ul>
-      </div>
-  </div>
-
-      <div id="mapid"></div>
-       
+  <!-- The div where we will inject our map -->
+  <div id="map"></div>
+  
   <!-- Our JS -->
   <script type="text/javascript" src="logic.js"></script>
 </body>
